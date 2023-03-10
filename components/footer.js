@@ -167,10 +167,10 @@ const footer = () => {
             </Link>
             . Distributed by{' '}
             <Link
-              href="https://themewagon.com/"
+              href="#"
               className="text-purple-600 hover:underline dark:text-purple-500"
             >
-              ThemeWagon
+              IO
             </Link>
           </span>
           <ul className="flex justify-center mt-5 space-x-5">
