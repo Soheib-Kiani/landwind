@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 import Link from 'next/link';
 
 /* eslint-disable @next/next/no-img-element */
@@ -25,23 +26,34 @@ const main = () => {
                 Flowbite Library
               </Link>{' '}
               and the{' '}
-              <Link href="https://flowbite.com/blocks/" className="hover:underline">
+              <Link
+                href="https://flowbite.com/blocks/"
+                className="hover:underline"
+              >
                 Blocks System
               </Link>
               .
             </p>
-            <div className="space-y-4 sm:flex sm:space-y-0 sm:space-x-4">
+            <div className="space-y-4 sm:flex sm:space-y-0 sm:space-x-4 ">
               <Link
                 href="https://github.com/Soheib-Kiani/landwind/tree/patest"
                 className="inline-flex items-center justify-center w-full px-5 py-3 text-sm font-medium text-center text-gray-900 border border-gray-200 rounded-lg sm:w-auto hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800"
               >
-                View on GitHub
+                <div className="flex items-center  ">
+                  <img className="h-5 w-5" src="/github.png" alt="github" />
+
+                  <p className="pl-2"> View on GitHub</p>
+                </div>
               </Link>
               <Link
                 href="https://github.com/Soheib-Kiani/landwind/tree/patest"
                 className="inline-flex items-center justify-center w-full px-5 py-3 mb-2 mr-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg sm:w-auto focus:outline-none hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
               >
-                View on Figma
+                <div className="flex items-center  ">
+                  <img className="h-5 w-5" src="/figma.png" alt="figma" />
+
+                  <p className="pl-2"> View on Figma</p>
+                </div>
               </Link>
             </div>
           </div>
