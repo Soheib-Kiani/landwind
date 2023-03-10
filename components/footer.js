@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
 
 const footer = () => {
@@ -143,7 +144,7 @@ const footer = () => {
             className="flex items-center justify-center mb-5 text-2xl font-semibold text-gray-900 dark:text-white"
           >
             <img
-              src="./images/logo.svg"
+              src="/logo.svg"
               className="h-6 mr-3 sm:h-9"
               alt="Landwind Logo"
             />
