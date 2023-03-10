@@ -1,14 +1,31 @@
+/* eslint-disable react-hooks/rules-of-hooks */
 /* eslint-disable @next/next/no-img-element */
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
+
 const firstdescription = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
-    <section class="bg-gray-50 dark:bg-gray-800">
-      <div class="max-w-screen-xl px-4 py-8 mx-auto space-y-12 lg:space-y-20 lg:py-24 lg:px-6">
-        <div class="items-center gap-8 lg:grid lg:grid-cols-2 xl:gap-16">
-          <div class="text-gray-500 sm:text-lg dark:text-gray-400">
-            <h2 class="mb-4 text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white">
+    <section className="bg-gray-50 dark:bg-gray-800">
+      <div className="max-w-screen-xl px-4 py-8 mx-auto space-y-12 lg:space-y-20 lg:py-24 lg:px-6">
+        <div className="items-center gap-8 lg:grid lg:grid-cols-2 xl:gap-16">
+          <div className="text-gray-500 sm:text-lg dark:text-gray-400">
+            <h2
+              data-aos="fade-up"
+              data-aos-offset="200"
+              data-aos-delay="30"
+              data-aos-duration="800"
+              data-aos-easing="ease-in-out"
+              data-aos-once="false"
+              className="mb-4 text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white"
+            >
               Work with tools you already use
             </h2>
-            <p class="mb-8 font-light lg:text-xl">
+            <p data-aos="fade-right" className="mb-8 font-light lg:text-xl">
               Deliver great service experiences fast - without the complexity of
               traditional ITSM solutions. Accelerate critical development work,
               eliminate toil, and deploy changes with ease.
@@ -16,11 +33,11 @@ const firstdescription = () => {
 
             <ul
               role="list"
-              class="pt-8 space-y-5 border-t border-gray-200 my-7 dark:border-gray-700"
+              className="pt-8 space-y-5 border-t border-gray-200 my-7 dark:border-gray-700"
             >
-              <li class="flex space-x-3">
+              <li data-aos="fade-right" className="flex space-x-3">
                 <svg
-                  class="flex-shrink-0 w-5 h-5 text-purple-500 dark:text-purple-400"
+                  className="flex-shrink-0 w-5 h-5 text-purple-500 dark:text-purple-400"
                   fill="currentColor"
                   viewBox="0 0 20 20"
                   xmlns="http://www.w3.org/2000/svg"
@@ -31,13 +48,13 @@ const firstdescription = () => {
                     clip-rule="evenodd"
                   ></path>
                 </svg>
-                <span class="text-base font-medium leading-tight text-gray-900 dark:text-white">
+                <span className="text-base font-medium leading-tight text-gray-900 dark:text-white">
                   Continuous integration and deployment
                 </span>
               </li>
-              <li class="flex space-x-3">
+              <li data-aos="fade-right" className="flex space-x-3">
                 <svg
-                  class="flex-shrink-0 w-5 h-5 text-purple-500 dark:text-purple-400"
+                  className="flex-shrink-0 w-5 h-5 text-purple-500 dark:text-purple-400"
                   fill="currentColor"
                   viewBox="0 0 20 20"
                   xmlns="http://www.w3.org/2000/svg"
@@ -48,13 +65,13 @@ const firstdescription = () => {
                     clip-rule="evenodd"
                   ></path>
                 </svg>
-                <span class="text-base font-medium leading-tight text-gray-900 dark:text-white">
+                <span className="text-base font-medium leading-tight text-gray-900 dark:text-white">
                   Development workflow
                 </span>
               </li>
-              <li class="flex space-x-3">
+              <li data-aos="fade-right" className="flex space-x-3">
                 <svg
-                  class="flex-shrink-0 w-5 h-5 text-purple-500 dark:text-purple-400"
+                  className="flex-shrink-0 w-5 h-5 text-purple-500 dark:text-purple-400"
                   fill="currentColor"
                   viewBox="0 0 20 20"
                   xmlns="http://www.w3.org/2000/svg"
@@ -65,34 +82,44 @@ const firstdescription = () => {
                     clip-rule="evenodd"
                   ></path>
                 </svg>
-                <span class="text-base font-medium leading-tight text-gray-900 dark:text-white">
+                <span className="text-base font-medium leading-tight text-gray-900 dark:text-white">
                   Knowledge management
                 </span>
               </li>
             </ul>
-            <p class="mb-8 font-light lg:text-xl">
+            <p data-aos="fade-right" className="mb-8 font-light lg:text-xl">
               Deliver great service experiences fast - without the complexity of
               traditional ITSM solutions.
             </p>
           </div>
           <img
-            class="hidden w-full mb-4 rounded-lg lg:mb-0 lg:flex"
+            data-aos="fade-left"
+            className="hidden w-full mb-4 rounded-lg lg:mb-0 lg:flex"
             src="feature-1.png"
             alt="dashboard feature image"
           />
         </div>
 
-        <div class="items-center gap-8 lg:grid lg:grid-cols-2 xl:gap-16">
+        <div className="items-center gap-8 lg:grid lg:grid-cols-2 xl:gap-16">
           <img
-            class="hidden w-full mb-4 rounded-lg lg:mb-0 lg:flex"
+            data-aos="fade-right"
+            className="hidden w-full mb-4 rounded-lg lg:mb-0 lg:flex"
             src="feature-2.png"
             alt="feature image 2"
           />
-          <div class="text-gray-500 sm:text-lg dark:text-gray-400">
-            <h2 class="mb-4 text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white">
+          <div className="text-gray-500 sm:text-lg dark:text-gray-400">
+            <h2
+              data-aos="fade-up"
+              data-aos-offset="200"
+              data-aos-delay="30"
+              data-aos-duration="800"
+              data-aos-easing="ease-in-out"
+              data-aos-once="false"
+              className="mb-4 text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white"
+            >
               We invest in the world’s potential
             </h2>
-            <p class="mb-8 font-light lg:text-xl">
+            <p data-aos="fade-left" className="mb-8 font-light lg:text-xl">
               Deliver great service experiences fast - without the complexity of
               traditional ITSM solutions. Accelerate critical development work,
               eliminate toil, and deploy changes with ease.
@@ -100,11 +127,11 @@ const firstdescription = () => {
 
             <ul
               role="list"
-              class="pt-8 space-y-5 border-t border-gray-200 my-7 dark:border-gray-700"
+              className="pt-8 space-y-5 border-t border-gray-200 my-7 dark:border-gray-700"
             >
-              <li class="flex space-x-3">
+              <li data-aos="fade-left" className="flex space-x-3">
                 <svg
-                  class="flex-shrink-0 w-5 h-5 text-purple-500 dark:text-purple-400"
+                  className="flex-shrink-0 w-5 h-5 text-purple-500 dark:text-purple-400"
                   fill="currentColor"
                   viewBox="0 0 20 20"
                   xmlns="http://www.w3.org/2000/svg"
@@ -115,13 +142,13 @@ const firstdescription = () => {
                     clip-rule="evenodd"
                   ></path>
                 </svg>
-                <span class="text-base font-medium leading-tight text-gray-900 dark:text-white">
+                <span className="text-base font-medium leading-tight text-gray-900 dark:text-white">
                   Dynamic reports and dashboards
                 </span>
               </li>
-              <li class="flex space-x-3">
+              <li data-aos="fade-left" className="flex space-x-3">
                 <svg
-                  class="flex-shrink-0 w-5 h-5 text-purple-500 dark:text-purple-400"
+                  className="flex-shrink-0 w-5 h-5 text-purple-500 dark:text-purple-400"
                   fill="currentColor"
                   viewBox="0 0 20 20"
                   xmlns="http://www.w3.org/2000/svg"
@@ -132,13 +159,13 @@ const firstdescription = () => {
                     clip-rule="evenodd"
                   ></path>
                 </svg>
-                <span class="text-base font-medium leading-tight text-gray-900 dark:text-white">
+                <span className="text-base font-medium leading-tight text-gray-900 dark:text-white">
                   Templates for everyone
                 </span>
               </li>
-              <li class="flex space-x-3">
+              <li data-aos="fade-left" className="flex space-x-3">
                 <svg
-                  class="flex-shrink-0 w-5 h-5 text-purple-500 dark:text-purple-400"
+                  className="flex-shrink-0 w-5 h-5 text-purple-500 dark:text-purple-400"
                   fill="currentColor"
                   viewBox="0 0 20 20"
                   xmlns="http://www.w3.org/2000/svg"
@@ -149,13 +176,13 @@ const firstdescription = () => {
                     clip-rule="evenodd"
                   ></path>
                 </svg>
-                <span class="text-base font-medium leading-tight text-gray-900 dark:text-white">
+                <span className="text-base font-medium leading-tight text-gray-900 dark:text-white">
                   Development workflow
                 </span>
               </li>
-              <li class="flex space-x-3">
+              <li data-aos="fade-left" className="flex space-x-3">
                 <svg
-                  class="flex-shrink-0 w-5 h-5 text-purple-500 dark:text-purple-400"
+                  className="flex-shrink-0 w-5 h-5 text-purple-500 dark:text-purple-400"
                   fill="currentColor"
                   viewBox="0 0 20 20"
                   xmlns="http://www.w3.org/2000/svg"
@@ -166,13 +193,13 @@ const firstdescription = () => {
                     clip-rule="evenodd"
                   ></path>
                 </svg>
-                <span class="text-base font-medium leading-tight text-gray-900 dark:text-white">
+                <span className="text-base font-medium leading-tight text-gray-900 dark:text-white">
                   Limitless business automation
                 </span>
               </li>
-              <li class="flex space-x-3">
+              <li data-aos="fade-left" className="flex space-x-3">
                 <svg
-                  class="flex-shrink-0 w-5 h-5 text-purple-500 dark:text-purple-400"
+                  className="flex-shrink-0 w-5 h-5 text-purple-500 dark:text-purple-400"
                   fill="currentColor"
                   viewBox="0 0 20 20"
                   xmlns="http://www.w3.org/2000/svg"
@@ -183,12 +210,12 @@ const firstdescription = () => {
                     clip-rule="evenodd"
                   ></path>
                 </svg>
-                <span class="text-base font-medium leading-tight text-gray-900 dark:text-white">
+                <span className="text-base font-medium leading-tight text-gray-900 dark:text-white">
                   Knowledge management
                 </span>
               </li>
             </ul>
-            <p class="font-light lg:text-xl">
+            <p data-aos="fade-left" className="font-light lg:text-xl">
               Deliver great service experiences fast - without the complexity of
               traditional ITSM solutions.
             </p>
