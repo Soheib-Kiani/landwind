@@ -1,16 +1,9 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 /* eslint-disable @next/next/no-img-element */
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-import { useEffect } from 'react';
 
 const firstdescription = () => {
-  useEffect(() => {
-    AOS.init();
-  }, []);
-
   return (
-    <section id='MARKET' className="bg-gray-50 dark:bg-gray-800">
+    <section id="MARKET" className="bg-gray-50 dark:bg-gray-800">
       <div className="max-w-screen-xl px-4 py-8 mx-auto space-y-12 lg:space-y-20 lg:py-24 lg:px-6">
         <div className="items-center gap-8 lg:grid lg:grid-cols-2 xl:gap-16">
           <div className="text-gray-500 sm:text-lg dark:text-gray-400">

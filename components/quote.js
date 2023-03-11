@@ -15,7 +15,14 @@ const quote = () => {
               fill="currentColor"
             />
           </svg>
-          <blockquote>
+          <blockquote
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-delay="30"
+            data-aos-duration="800"
+            data-aos-easing="ease-in-out"
+            data-aos-once="false"
+          >
             <p className="text-xl font-medium text-gray-900 md:text-2xl dark:text-white">
               Landwind is just awesome. It contains tons of predesigned
               components and pages starting from login screen to complex
@@ -29,11 +36,21 @@ const quote = () => {
               alt="profile picture"
             />
             <div className="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
-              <div className="pr-3 font-medium text-gray-900 dark:text-white">
-                Micheal Gough
+              <div
+                data-aos="fade-right"
+                data-aos-delay="30"
+                data-aos-duration="800"
+                className="pr-3 font-medium text-gray-900 dark:text-white"
+              >
+                Soheib Kiani
               </div>
-              <div className="pl-3 text-sm font-light text-gray-500 dark:text-gray-400">
-                CEO at Google
+              <div
+                data-aos="fade-left"
+                data-aos-delay="30"
+                data-aos-duration="800"
+                className="pl-3 text-sm font-light text-gray-500 dark:text-gray-400"
+              >
+                Founder IO-Team
               </div>
             </div>
           </figcaption>
