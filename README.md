@@ -2,7 +2,7 @@
 
 ### Landwind
 
-This is mini project to train with these Features.
+This is a mini project to train with these Features.
 Animations
 Responsive
 
@@ -24,7 +24,6 @@ TailwindCSS
 
 ```bash
 
-// call the class
 npm install
 
 ```
@@ -32,7 +31,6 @@ Step 2 : Run by this command
 
 ```bash
 
-// call the class
 npm run dev
 
 ```
